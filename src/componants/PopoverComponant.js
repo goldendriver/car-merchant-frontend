@@ -34,7 +34,7 @@ export default function PopoverComponant() {
               <Box display="flex" sx={{alignItems:"center", ml:"20px"}}>
                 <img src={logo} width="100px"/>
                 <WhatsAppIcon/>
-                <Typography sx={{ p: 2 }}>Atocha Transfer</Typography>
+                <Typography sx={{ p: 2 }}>VTC-TOLEDO</Typography>
               </Box>
               </a>
               <Divider />
@@ -42,7 +42,7 @@ export default function PopoverComponant() {
               <Box display="flex" sx={{alignItems:"center", ml:"20px"}}>
                 <img src={logo} width="100px"/>
                 <WhatsAppIcon/>
-                <Typography sx={{ p: 2 }}>Atocha Transfer</Typography>
+                <Typography sx={{ p: 2 }}>VTC-TOLEDO</Typography>
               </Box>
               </a>
             </Box>
