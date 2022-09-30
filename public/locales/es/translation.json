@@ -1,0 +1,220 @@
+{
+  "header": {
+    "logoTitle": "Vehículos con Conductor",
+    "start": "Inicio",
+    "about": "Sobre Nosotros",
+    "ourFleet": "Nuestra flota",
+    "group": "Grupos",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "toledo": "Toledo",
+    "toledoAddress": "Calle Jacinto Benavente 4",
+    "toledoNum": "45400 - Mora (Toledo)",
+    "information": "INFORMACIÓN LEGAL",
+    "informationCon": "Condiciones generales",
+    "informationFre": "Preguntas frecuentes",
+    "informationGdpr": "Aceptación RGPD",
+    "informationLegal": "Aviso legal",
+    "link": "ENLACES DE INTERÉS",
+    "link1": "Traslados Toledo",
+    "link2": "Traslados a Puy du Fou",
+    "link3": "Transferir Toledo-Madrid",
+    "link4": "Transferir a Toledo",
+    "link5": "Transporte privado",
+    "link6": "Transfer Toledo Aeropuerto",
+    "taxi": "Taxi Toledo - Puy du Fou",
+    "taxi1": "Transporte Toledo - Puy du Fou",
+    "taxi2": "Traslados grupos Puy du Fou",
+    "taxi3": "Toledo - Puy du Fou cómo llegar",
+    "copyright": "Toledo Puy du Fou © 2022 obtener Toledo"
+  },
+  "iconBox": {
+    "title": "Alquiler de Coches con Conductor con destino Toledo y Puy du Fou",
+    "btn": "RESERVAR",
+    "iconBox1": {
+      "title": "CONDUCTOR PROFESIONAL",
+      "desc": "Coches con conductor a Toledo y Puy du Fou"
+    },
+    "iconBox2": {
+      "title": "SERVICIO PUERTA A PUERTA",
+      "desc": "Servicio puerta a puerta desde alojamiento o aeropuerto a destino"
+    },
+    "iconBox3": {
+      "title": "CANCELACIÓN GRATUITA",
+      "desc": "Cancelación gratuita con 24 horas de antelacion"
+    },
+    "iconBox4": {
+      "title": "ATENCIÓN 24/7",
+      "desc": "Servicio de atención 24 horas los 365 días del año"
+    },
+    "iconBox5": {
+      "title": "PAGO SEGURO",
+      "desc": "Pasarela de pago online 100% segura y confiable"
+    },
+    "iconBox6": {
+      "title": "PAGO SEGURO",
+      "desc": "Pasarela de pago online 100% segura y confiable"
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "card1": {
+      "title": "Asegure siempre su llegada a destino",
+      "desc": "Le recogemos donde nos diga con absoluta puntualidad para llevarle al destino que nos indique. Controlaremos la hora de llegada que nos ha facilitado para recogerle a tiempo en el aeropuerto o estación concertada, tanto si su vuelo o tren se retrasa, como si llega antes de lo previsto. Nuestros conductores le esperarán en el punto de encuentro más cercano con un cartel con su nombre, le ayudaremos con su equipaje y lo trasladaremos al destino escogido por usted. De la misma forma, si necesita trasladarse al aeropuerto o estación, contrate nuestro servicio de recogida. Nuestro personal colaborará siempre con usted en la carga y descarga de sus equipajes."
+    },
+    "card2": {
+      "title": "Puntualidad y distinción",
+      "desc": "Este servicio está destinado a profesionales que necesitan llegar siempre a tiempo a sus reuniones y así poder aprovechar su tiempo durante el trayecto. Nuestros servicios les permitirán mantener sus estándares de puntualidad y eficacia aprovechando el tiempo en sus trayectos. Atochatransfer le facilitará la cobertura a congresos, o convenciones de cualquier tipo asesorándole de forma personalizada de la logística y gestión necesarias para el correcto funcionamiento de cualquier acto que precise. Nuestro departamento de eventos gestionará horarios de vuelos, lista de asistentes, “meet&greet”, necesidades de shuttle a hoteles y recintos feriales."
+    },
+    "card3": {
+      "title": "Viajes turísticos",
+      "desc": "Dispondrá no solo de nuestros vehículos y conductores experimentados sino toda nuestra capacidad de gestión para que no se pierda nada en su viaje o visita: guías, traductores, o cualquier profesional que precise. Háganos su propuesta de viaje y nos pondremos a su entera disposición durante el tiempo que necesite. Hemos diseñado varios tours turísticos que ponemos en su conocimiento pensados para aprovechar al máximo su tiempo, disfrutando de la historia, la arquitectura, el arte o la gastronomía, guiado siempre por un profesional que hará de su viaje o visita un experiencia inolvidable."
+    }
+  },
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "btn": "RESERVAR",
+    "faqs1": {
+      "title": "¿Cuánto se tarda en coche con conductor de Madrid a Toledo?",
+      "desc": "El tiempo aproximado es de 50 minutos con un tráfico fluido sin complicaciones."
+    },
+    "faqs2": {
+      "title": "¿Cuánto tiempo tarda el traslado de Madrid a Puy du Fou?",
+      "desc": "El tiempo aproximado es de 50 a 60 minutos con un tráfico fluido."
+    },
+    "faqs3": {
+      "title": "¿Con cuánta antelación puedo reservar el traslado a Toledo?",
+      "desc": "Cuanto antes realices la reserva antes podremos planificar tu traslado, pero basta con que nos contactes al menos con 6 horas de antelación."
+    },
+    "faqs4": {
+      "title": "¿Cuánto tiempo me puede esperar el conductor?",
+      "desc": "Nuestro conductor podrá esperar hasta 15 minutos de cortesía para recogidas en hoteles, empresas, apartamentos, domicilio y hasta 30 minutos en aeropuertos, estaciones y parque Puy du Fou en Toledo."
+    },
+    "faqs5": {
+      "title": "¿Con cuánto tiempo puedo cancelar la reserva?",
+      "desc": "Podrás cancelar la reserva sin gastos, siempre que la cancelación se produzca con más de 24 horas de antelación."
+    },
+    "faqs6": {
+      "title": "¿Una vez cancelada la reserva puedo recuperar el dinero?",
+      "desc": "Recuperarás el 100% de la reserva siempre que la cancelación se produzca antes de 24 horas. La devolución del importe se realizará a la misma tarjeta bancaria a la que se realizó el cargo de la reserva."
+    },
+    "faqs7": {
+      "title": "¿Qué hago si no localizo a mi conductor?",
+      "desc": "Deberás llamar al teléfono móvil proporcionado en la confirmación de la reserva, o bien llamar a nuestro servicio de atención 24 horas que figura en nuestra web."
+    },
+    "faqs8": {
+      "title": "¿Cómo localizar a mi conductor en caso de recogida en el parque Puy du Fou en Toledo?",
+      "desc": "El conductor esperará en la zona habilitada para vehículos de servicio público del aparcamiento de Puy du Fou. Nuestros coches y furgonetas suelen ser marca Mercedes de color negro. El propio conductor le llamará al teléfono facilitado en la reserva en caso de no localizarle a la salida de recinto a la hora pactada."
+    },
+    "faqs9": {
+      "title": "Cómo llegar a Puy du Fou",
+      "desc": "Nuestros conductores conocen la ubicación y accesos al parque Puy du Fou. Nuestro chófer le dejará o recogerá en su caso, en la puerta principal de acceso que se encuentra en el parking de Puy du Fou. Nuestros conductores utilizan la autovía A-42 y enlazan con la A-40 y la CM-40."
+    },
+    "faqs10": {
+      "title": "Cómo llegar a Toledo",
+      "desc": "Todos nuestros vehículos utilizan la autovía A-42 Madrid-Toledo con llegada directa en 50 minutos."
+    }
+  },
+  "popUp": {
+    "main": "¿Podemos ayudarte?",
+    "title": "Hola!",
+    "desc": "Pinche para hablar con nosotros o escríbanos a info@vtc-toledo.com",
+    "call": "VTC-TOLEDO"
+  },
+  "forms": {
+    "lebal1": {
+      "lebal": "Origen",
+      "placeholder": "Seleccionar lugar de Origen",
+      "selector1": "Madrid Ciudad",
+      "selector2": "Aeropuerto Madrid-Barajas(MAD)",
+      "selector3": "Toledo Ciudad",
+      "selector4": "Parque Puy du Fou",
+      "selector5": "Estación de Atocha Madrid",
+      "selector6": "Estación de Chamartín Madrid"
+    },
+    "lebal2": {
+      "lebal": "Destino",
+      "placeholder": "Seleccionar lugar de destino",
+      "selector1": "Madrid-Barajas Airport(MAD)",
+      "selector2": "Toledo Ciudad",
+      "selector3": "Parque Puy du Fou",
+      "selector4": "Estación de Atocha Madrid",
+      "selector5": "Estación de Chamartín Madrid"
+    },
+    "lebal3": {
+      "title": "Fecha y hora"
+    },
+    "lebal4": {
+      "title1": "Adultos",
+      "title2": "Niños",
+      "title3": "Bebés",
+      "title4": "Teléfono"
+    },
+    "lebal5": {
+      "title1": "Sólo ida",
+      "title2": "Ida y vuelta"
+    },
+    "btn": "Encuentra un transfer"
+  },
+  "about": {
+    "title": "Sobre nosotras",
+    "card1": {
+      "title": "Misión",
+      "description": "Dotar a nuestros clientes de transporte privado de calidad, con vehículos de alta gama y conductores profesionales, con el único objetivo de satisfacer sus necesidades de desplazamiento."
+    },
+    "card2": {
+      "title": "Visión",
+      "description": "Dar respuesta al incremento del flujo de turistas, empresas y particulares que demandan un servicio de transporte privado rápido y eficaz entre Madrid y Toledo."
+    },
+    "card3": {
+      "title": "Valores",
+      "description": "Apostar por un futuro de transporte sostenible, responsable, seguro y competitivo que nos haga continuar siendo un referente en los desplazamientos por carretera."
+    }
+  },
+  "fleet": {
+    "description1": "Nuestra Flota",
+    "description2": "STANDAR, BUSSINES AND VAN ",
+    "description3": "Nuestros vehículos cuentan con sistemas de seguridad activa, como frenos ABS, control de estabilidad ESP, control de tracción y Airbags frontales y laterales.",
+    "description4": "Disponemos de coches con chófer con gran experiencia al volante",
+    "description5": "Todos nuestros vehículos disponen de licencia VTC",
+    "description6": "También ofrecemos servicio de chófer privado por horas",
+    "button1": "Enviar"
+  },
+  "groups": {
+    "group1": {
+      "title": "Traslados de grupos a Toledo",
+      "description1": "Tanto para empresas como para particulares en Toledo ofrecemos transporte privado para grupos desde Madrid o desde el Aeropuerto a Toledo.",
+      "description2": "Organizamos traslados para grupos turísticos, para eventos, exposiciones y congresos o cualquier otro evento que necesite.",
+      "description3": "Parte de nuestro equipo es de Toledo y por tanto, conocemos hasta el último rincón de la ciudad. Esto hace que podamos garantizarle una gestión eficaz de sus solicitudes adaptando nuestros recursos a sus necesidades.",
+      "description4": "En Toledo le ofrecemos un servicio integral para grupos particulares o bien para agencias y empresas.",
+      "description5": "Organizamos traslados para grupos a Toledo y Puy du Foy España, bien sea en minibuses o autobuses de gran capacidad en función del número de personas. También disponemos de furgonetas Mercedes Vito y Viano de hasta 8 pasajeros.",
+      "description6": "Solicite presupuesto sin compromiso"
+    },
+    "group2": {
+      "title": "Realizamos traslados de grupos a Puy du Fou",
+      "description1": "Con nuestros traslados de grupos a Puy du Fou desde Toledo o Madrid podréis llegar a descubrir un maravilloso parque que está capacitado para ofrecer espectáculos que te dejarán con la boca abierta. Estás muy cerca de poder descubrir un mundo lleno de cultura. Además, ahora tienes la posibilidad de poder disfrutar del que ha sido galardonado de forma reciente como mejor espectáculo del mundo. Son muchas las cosas que puedes ver y hacer en Toledo. Acércate a conocer todas ellas con nosotros. Get Toledo es lo que necesitas para cualquier traslado.",
+      "description2": "Cuando realices la búsqueda Toledo Puy du Fou cómo llegar, no dudes en elegir nuestros servicios. Queremos hacerte la vida más fácil.",
+      "description3": "Si buscas un servicio de taxi desde Toledo a Puy du Fou con la seguridad de un conductor profesional, apuesta por nosotros."
+    },
+    "group3": {
+      "title": "VTC Toledo - Traslados a Toledo y Puy du Fou"
+    },
+    "group4": {
+      "title": "Contacto",
+      "description1": "Si tiene alguna pregunta acerca de nuestro servicio póngase en contacto con nosotros."
+    },
+    "group5": {
+      "title1": "Nombre*",
+      "title2": " Apellidos*",
+      "title3": "Email*",
+      "title4": "Teléfono*",
+      "title5": "Mensaje*",
+      "title6": "Enviar"
+    },
+    "group6": {
+      "title1": "Le atenderemos"
+    }
+  }
+}
+

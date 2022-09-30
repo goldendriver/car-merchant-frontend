@@ -15,6 +15,7 @@ import {useMediaQuery} from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Payment from "./page/Payment";
+
 function App() {
   const desktop = useMediaQuery("(min-width: 1024px)");
   return (

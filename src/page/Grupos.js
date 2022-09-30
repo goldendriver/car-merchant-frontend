@@ -6,37 +6,39 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import group from "../assets/group.png";
+import { useTranslation, Trans } from 'react-i18next';
 export default function Grupos() {
     const mapStyles = {
         width: '90%',
         height: '70%',
         zoom: '5',
     };
+    const { t } = useTranslation();
     return (
         <>
             <Header />
             <Container fullWidth>
-                <Typography fontSize="39px" fontWeight="600"> Traslados de grupos a Toledo</Typography>
-                <Typography sx={{ mt: "20px", textAlign: "left" }}>Tanto para empresas como para particulares en Toledo ofrecemos transporte privado para grupos desde Madrid o desde el Aeropuerto a Toledo.
+                <Typography fontSize="39px" fontWeight="600"> {t('groups.group1.title')}</Typography>
+                <Typography sx={{ mt: "20px", textAlign: "left" }}> {t('groups.group1.description1')}
                     <br /><br />
-                    Organizamos traslados para grupos turísticos, para eventos, exposiciones y congresos o cualquier otro evento que necesite.
+                    {t('groups.group1.description2')}
                     <br /><br />
-                    Parte de nuestro equipo es de Toledo y por tanto, conocemos hasta el último rincón de la ciudad. Esto hace que podamos garantizarle una gestión eficaz de sus solicitudes adaptando nuestros recursos a sus necesidades.
+                    {t('groups.group1.description3')}
                     <br /><br />
-                    En Toledo le ofrecemos un servicio integral para grupos particulares o bien para agencias y empresas.
+                    {t('groups.group1.description4')}
                     <br /><br />
-                    Organizamos traslados para grupos a Toledo y Puy du Foy España, bien sea en minibuses o autobuses de gran capacidad en función del número de personas. También disponemos de furgonetas Mercedes Vito y Viano de hasta 8 pasajeros.
+                    {t('groups.group1.description5')}
                     <br /><br />
-                    Solicite presupuesto  sin compromiso</Typography>
+                    {t('groups.group1.description6')}</Typography>
                 <Box sx={{ mt: "50px" }}>
-                    <Typography fontSize="39px" fontWeight="600">Realizamos traslados de grupos a Puy du Fou</Typography>
+                    <Typography fontSize="39px" fontWeight="600">{t('groups.group2.title')}</Typography>
                     <Box sx={{ display: "flex" }}>
                         <Box width="65%">
-                            <Typography textAlign="left">Con nuestros traslados de grupos a Puy du Fou desde Toledo o Madrid podréis llegar a descubrir un maravilloso parque que está capacitado para ofrecer espectáculos que te dejarán con la boca abierta. Estás muy cerca de poder descubrir un mundo lleno de cultura. Además, ahora tienes la posibilidad de poder disfrutar del que ha sido galardonado de forma reciente como mejor espectáculo del mundo. Son muchas las cosas que puedes ver y hacer en Toledo. Acércate a conocer todas ellas con nosotros. Get Toledo es lo que necesitas para cualquier traslado.
+                            <Typography textAlign="left">{t('groups.group2.description1')}
                                 <br /><br />
-                                Cuando realices la búsqueda Toledo Puy du Fou cómo llegar, no dudes en elegir nuestros servicios. Queremos hacerte la vida más fácil.
+                                {t('groups.group2.description2')}
                                 <br /><br />
-                                Si buscas un servicio de taxi desde Toledo a Puy du Fou con la seguridad de un conductor profesional, apuesta por nosotros.</Typography>
+                                {t('groups.group2.description3')}</Typography>
                         </Box>
                         <Box width="35%">
                             <img src={group} width="100%" />
@@ -45,11 +47,11 @@ export default function Grupos() {
                 </Box>
                 <Box sx={{ mt: "50px", display: "flex" }}>
                     <Box width="40%" textAlign="left" sx={{ marginTop: "50px" }}>
-                        <Typography fontSize="45px" fontWeight="700">Contacto</Typography>
-                        <Typography fontSize="23px">Si tiene alguna pregunta acerca de nuestro servicio póngase en contacto con nosotros.</Typography>
+                        <Typography fontSize="45px" fontWeight="700">{t('groups.group4.title')}</Typography>
+                        <Typography fontSize="23px">{t('groups.group4.description1')}</Typography>
                     </Box>
                     <Box width="60%">
-                        <Typography fontSize="29px" fontWeight="600">VTC Toledo - Traslados a Toledo y Puy du Fou</Typography>
+                        <Typography fontSize="29px" fontWeight="600">{t('groups.group2.title')}</Typography>
                         <Box sx={{ display: "flex", mt: "20px" }}>
                             <PlaceIcon />
                             <Typography>Jacinto Benavente 4, Mora (Toledo)</Typography>
@@ -83,37 +85,37 @@ export default function Grupos() {
                     <Box width="40%">
                         <Box padding="20px" textAlign="left">
                             <Typography>
-                                Nombre*
+                            {t('groups.group5.title1')}
                             </Typography>
                             <FormControl sx={{ width: "100%" }}>
-                                <TextField id="outlined-basic" label="Nombre" variant="outlined" />
+                                <TextField id="outlined-basic" label= {t('groups.group5.title1')} variant="outlined" />
                             </FormControl>
                             <Typography>
-                                Apellidos*
+                            {t('groups.group5.title2')}
                             </Typography>
                             <FormControl sx={{ width: "100%" }}>
-                                <TextField id="outlined-basic" label="Apellidos" variant="outlined" />
+                                <TextField id="outlined-basic" label={t('groups.group5.title2')} variant="outlined" />
                             </FormControl>
                             <Typography>
-                                Email*
+                            {t('groups.group5.title3')}
                             </Typography>
                             <FormControl sx={{ width: "100%" }}>
-                                <TextField id="outlined-basic" label="Email" variant="outlined" />
+                                <TextField id="outlined-basic" label={t('groups.group5.title3')} variant="outlined" />
                             </FormControl>
                             <Typography>
-                                Teléfono*
+                            {t('groups.group5.title4')}
                             </Typography>
                             <FormControl sx={{ width: "100%" }}>
-                                <TextField id="outlined-basic" label="Teléfono" variant="outlined" />
+                                <TextField id="outlined-basic" label={t('groups.group5.title4')} variant="outlined" />
                             </FormControl>
                             <Typography>
-                                Mensaje*
+                            {t('groups.group5.title5')}
                             </Typography>
                             <FormControl sx={{ width: "100%", mb: "30px" }}>
                                 <TextareaAutosize minRows={7} />
                             </FormControl>
 
-                            <a className="conBtn">Enviar</a>
+                            <a className="conBtn">   {t('groups.group5.title6')}</a>
                         </Box>
                     </Box>
                     <Box width="60%">

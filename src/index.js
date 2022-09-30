@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Box } from '@mui/system';
-import {WhatsAppIcon} from "@mui/icons-material";
+import { WhatsAppIcon } from "@mui/icons-material";
+import './utils/i18n';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

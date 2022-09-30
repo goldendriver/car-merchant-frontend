@@ -1,0 +1,220 @@
+{
+  "header": {
+    "logoTitle": "Vehicles with driver",
+    "start": "Start",
+    "about": "About Us",
+    "ourFleet": "Our Fleet",
+    "group": "Groups",
+    "contact": "Contact"
+  },
+  "footer": {
+    "toledo": "Toledo",
+    "toledoAddress": "Jacinto Benavente Street 4",
+    "toledoNum": "45400 - Mora (Toledo)",
+    "information": "LEGAL INFORMATION",
+    "informationCon": "General conditions",
+    "informationFre": "Frequent questions",
+    "informationGdpr": "GDPR Acceptance",
+    "informationLegal": "Legal warning",
+    "link": "LINKS OF INTEREST",
+    "link1": "Transfers Toledo",
+    "link2": "Transfers to Puy du Fou",
+    "link3": "Transfer Toledo-Madrid",
+    "link4": "Transfer to Toledo",
+    "link5": "Private transport",
+    "link6": "Transfer Toledo Airport",
+    "taxi": "Taxi Toledo - Puy du Fou",
+    "taxi1": "Transport Toledo - Puy du Fou",
+    "taxi2": "Puy du Fou group transfers",
+    "taxi3": "Toledo - Puy du Fou how to get there",
+    "copyright": "Toledo Puy du Fou © 2022 Get Toledo"
+  },
+  "iconBox": {
+    "title": "Car rental with driver to Toledo and Puy du Fou",
+    "btn": "RESERVE",
+    "iconBox1": {
+      "title": "PROFESSIONAL DRIVER",
+      "desc": "Cars with driver to Toledo and Puy du Fou"
+    },
+    "iconBox2": {
+      "title": "DOOR TO DOOR SERVICE",
+      "desc": "Door-to-door service from accommodation or airport to destination"
+    },
+    "iconBox3": {
+      "title": "FREE CANCELATION",
+      "desc": "Free cancellation 24 hours in advance"
+    },
+    "iconBox4": {
+      "title": "ATTENTION 24/7",
+      "desc": "24-hour service 365 days a year"
+    },
+    "iconBox5": {
+      "title": "SECURE PAYMENT",
+      "desc": "100% secure and reliable online payment gateway"
+    },
+    "iconBox6": {
+      "title": "SECURE PAYMENT",
+      "desc": "100% secure and reliable online payment gateway"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "card1": {
+      "title": "Always ensure your arrival at your destination",
+      "desc": "We pick you up where you tell us with absolute punctuality to take you to the destination you indicate. We will check the arrival time you have given us to pick you up on time at the airport or arranged station, whether your flight or train is delayed or arrives earlier than expected. Our drivers will wait for you at the nearest meeting point with a sign with your name on it, we will help you with your luggage and transfer you to the destination of your choice. In the same way, if you need to go to the airport or station, hire our pick-up service. Our staff will always collaborate with you in loading and unloading your luggage."
+    },
+    "card2": {
+      "title": "Punctuality And Distinction",
+      "desc": "This service is intended for professionals who need to always arrive on time for their meetings and thus be able to take advantage of their time during the journey. Our services will allow you to maintain your standards of punctuality and efficiency, taking advantage of the time on your journeys. Atochatransfer will provide you with coverage for congresses or conventions of any kind, advising you in a personalized way on the logistics and management necessary for the proper functioning of any act you require. Our events department will manage flight schedules, list of attendees, “meet&greet”, shuttle needs to hotels and fairgrounds."
+    },
+    "card3": {
+      "title": "Tourist Trips",
+      "desc": "You will have not only our vehicles and experienced drivers, but all our management capacity so that you do not miss anything on your trip or visit: guides, translators, or any professional you need. Make us your travel proposal and we will be at your entire disposal for as long as you need. We have designed several tourist tours that we bring to your attention designed to make the most of your time, enjoying history, architecture, art or gastronomy, always guided by a professional who will make your trip or visit an unforgettable experience."
+    }
+  },
+  "faqs": {
+    "title": "Frequent questions",
+    "btn": "RESERVE",
+    "faqs1": {
+      "title": "How long does it take by car with a driver from Madrid to Toledo?",
+      "desc": "The approximate time is 50 minutes with smooth traffic without complications."
+    },
+    "faqs2": {
+      "title": "How long does the transfer from Madrid to Puy du Fou take?",
+      "desc": "The approximate time is 50 to 60 minutes with light traffic."
+    },
+    "faqs3": {
+      "title": "How far in advance can I book the transfer to Toledo?",
+      "desc": "The earlier you make the reservation, the sooner we can plan your transfer, but it is enough for you to contact us at least 6 hours in advance."
+    },
+    "faqs4": {
+      "title": "How long can the driver wait for me?",
+      "desc": "Our driver will be able to wait up to 15 courtesy minutes for pick-ups at hotels, companies, apartments, homes and up to 30 minutes at airports, stations and Puy du Fou park in Toledo."
+    },
+    "faqs5": {
+      "title": "How soon can I cancel the reservation?",
+      "desc": "You can cancel the reservation free of charge, provided that the cancellation occurs more than 24 hours in advance."
+    },
+    "faqs6": {
+      "title": "Once the reservation has been cancelled, can I get the money back?",
+      "desc": "You will recover 100% of the reservation as long as the cancellation occurs within 24 hours. The refund of the amount will be made to the same bank card to which the reservation was charged."
+    },
+    "faqs7": {
+      "title": "What do I do if I can't locate my driver?",
+      "desc": "You must call the mobile phone provided in the reservation confirmation, or call our 24-hour customer service listed on our website."
+    },
+    "faqs8": {
+      "title": "How to locate my driver in case of pick-up at the Puy du Fou park in Toledo?",
+      "desc": "The driver will wait in the area designated for public service vehicles in the Puy du Fou car park. Our cars and vans are usually black Mercedes brand. The driver himself will call you on the telephone number provided in the reservation in case of not locating you at the exit of the venue at the agreed time."
+    },
+    "faqs9": {
+      "title": "How to get to Puy du Fou",
+      "desc": "Our drivers know the location and access to the Puy du Fou park. Our driver will drop you off or pick you up, where appropriate, at the main access door located in the Puy du Fou car park. Our drivers use the A-42 motorway and connect with the A-40 and the CM-40."
+    },
+    "faqs10": {
+      "title": "How to get to Toledo",
+      "desc": "All our vehicles use the A-42 Madrid-Toledo motorway with direct arrival in 50 minutes."
+    }
+  },
+  "popUp": {
+    "main": "We can help you?",
+    "title": "Hello!",
+    "desc": "Click to talk to us or write to us at info@vtc-toledo.com",
+    "call": "VTC-TOLEDO"
+  },
+  "forms": {
+    "lebal1": {
+      "lebal": "Source",
+      "placeholder": "Select place of Source",
+      "selector1": "Madrid City",
+      "selector2": "Madrid-Barajas Airport(MAD)",
+      "selector3": "Toledo City",
+      "selector4": "Puy du Fou Park",
+      "selector5": "Madrid Atocha Station",
+      "selector6": "Madrid Chamartin Station"
+    },
+    "lebal2": {
+      "lebal": "Destiny",
+      "placeholder": "Select destination",
+      "selector1": "Madrid-Barajas Airport(MAD)",
+      "selector2": "Toledo City",
+      "selector3": "Puy du Fou Park",
+      "selector4": "Madrid Atocha Station",
+      "selector5": "Madrid Chamartin Station"
+    },
+    "lebal3": {
+      "title": "Date and Time"
+    },
+    "lebal4": {
+      "title1": "Adults",
+      "title2": "Kids",
+      "title3": "Babies",
+      "title4": "Telephone"
+    },
+    "lebal5": {
+      "title1": "One way",
+      "title2": "Round trip"
+    },
+    "btn": "Find a transfer"
+  },
+  "about": {
+    "title": "About Us",
+    "card1": {
+      "title": "Mission",
+      "description": "Provide our clients with quality private transport, with high-end vehicles and professional drivers, with the sole objective of satisfying their travel needs."
+    },
+    "card2": {
+      "title": "Vision",
+      "description": "Respond to the increased flow of tourists, companies and individuals who demand a fast and efficient private transport service between Madrid and Toledo."
+    },
+    "card3": {
+      "title": "Values",
+      "description": "Commit to a future of sustainable, responsible, safe and competitive transport that makes us continue to be a benchmark in road travel."
+    }
+  },
+  "fleet": {
+    "description1": "Our fleet",
+    "description2": "STANDARD, BUSINESS AND VAN",
+    "description3": "Our vehicles have active safety systems, such as ABS brakes, ESP stability control, traction control and front and side airbags",
+    "description4": "We have cars with drivers with great experience behind the wheel",
+    "description5": "All our vehicles have a VTC license",
+    "description6": "We also offer private chauffeur service for hours",
+    "button1": "Send"
+  },
+  "groups": {
+    "group1": {
+      "title": "Group transfers to Toledo",
+      "description1": "For both companies and individuals in Toledo we offer private transport for groups from Madrid or from the Airport to Toledo.",
+      "description2": "We organize transfers for tourist groups, for events, exhibitions and congresses or any other event you need.",
+      "description3": "Part of our team is from Toledo and therefore, we know every corner of the city. This means that we can guarantee efficient management of your requests by adapting our resources to your needs.",
+      "description4": "In Toledo we offer a comprehensive service for private groups or for agencies and companies.",
+      "description5": "We organize transfers for groups to Toledo and Puy du Foy Spain, either in minibuses or large capacity buses depending on the number of people. We also have Mercedes Vito and Viano vans for up to 8 passengers.",
+      "description6": "Request a quote without commitment"
+    },
+    "group2": {
+      "title": "We carry out group transfers to Puy du Fou",
+      "description1": "With our group transfers to Puy du Fou from Toledo or Madrid you will be able to discover a wonderful park that is capable of offering shows that will leave you speechless. You are very close to being able to discover a world full of culture. In addition, now you have the possibility of being able to enjoy what has recently been awarded as the best show in the world. There are many things you can see and do in Toledo. Get to know all of them with us. Get Toledo is what you need for any transfer.",
+      "description2": "When you search Toledo Puy du Fou how to get there, don't hesitate to choose our services. We want to make your life easier.",
+      "description3": "If you are looking for a taxi service from Toledo to Puy du Fou with the safety of a professional driver, bet on us."
+    },
+
+    "group3": {
+      "title": " VTC Toledo - Transfers to Toledo and Puy du Fou"
+    },
+    "group4": {
+      "title": "Contact",
+      "description1": "If you have any questions about our service please contact us."
+    },
+    "group5": {
+      "title1": "Name*",
+      "title2": " Surnames*",
+      "title3": "Email*",
+      "title4": "Telephone*",
+      "title5": "Message*",
+      "title6": "Send"
+    },
+    "group6": {
+      "title1": "we will assist you"
+    }
+  }
+}

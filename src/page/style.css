@@ -169,6 +169,9 @@
     max-width: 400px;
     background-color: #ffffff80;
 }
+.logo{
+    display: flex;
+}
 .menu-item{
     padding:10px;
     font-size: 15px;
