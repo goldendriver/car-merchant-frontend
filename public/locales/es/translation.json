@@ -123,8 +123,8 @@
     "call": "VTC-TOLEDO"
   },
   "forms": {
-    "lebal1": {
-      "lebal": "Origen",
+    "field1": {
+      "label": "Origen",
       "placeholder": "Seleccionar lugar de Origen",
       "selector1": "Madrid Ciudad",
       "selector2": "Aeropuerto Madrid-Barajas(MAD)",
@@ -133,8 +133,8 @@
       "selector5": "Estación de Atocha Madrid",
       "selector6": "Estación de Chamartín Madrid"
     },
-    "lebal2": {
-      "lebal": "Destino",
+    "field2": {
+      "label": "Destino",
       "placeholder": "Seleccionar lugar de destino",
       "selector1": "Madrid-Barajas Airport(MAD)",
       "selector2": "Toledo Ciudad",
@@ -142,18 +142,21 @@
       "selector4": "Estación de Atocha Madrid",
       "selector5": "Estación de Chamartín Madrid"
     },
-    "lebal3": {
+    "field3": {
       "title": "Fecha y hora"
     },
-    "lebal4": {
+    "field4": {
       "title1": "Adultos",
       "title2": "Niños",
       "title3": "Bebés",
       "title4": "Teléfono"
     },
-    "lebal5": {
+    "field5": {
       "title1": "Sólo ida",
       "title2": "Ida y vuelta"
+    },
+    "errors": {
+      "error1": "Obligatorio"
     },
     "btn": "Encuentra un transfer"
   },
@@ -214,6 +217,57 @@
     },
     "group6": {
       "title1": "Le atenderemos"
+    }
+  },
+  "carSelect": {
+    "steper": {
+      "title1": "Seleccionar fechas",
+      "title2": "Seleccionar vehículo",
+      "title3": "Completar",
+      "title4": "Resumen"
+    },
+    "edit": "EDITAR",
+    "cars": {
+      "title": "Hemos encontrado {{length}} vehículos disponibles",
+      "btn": "Resérvalo"
+    },
+    "going": "IDA",
+    "supplements": {
+      "title": "Suplementos",
+      "descri": "Suplemento nocturnidad/festivo"
+    },
+    "extras": "Extras",
+    "customerDetails": {
+      "title": "Detalles del cliente",
+      "field1": "Nombre",
+      "field2": "Apellidos",
+      "field3": "Correo electrónico",
+      "field4": "Confirmar el correo electrónico",
+      "field5": "Número de teléfono",
+      "field6": "Teléfono alternativo"
+    },
+    "billingDetail": {
+      "title": "Billing Address",
+      "field1": "Dirección",
+      "field2": "Ciudad",
+      "field3": "Provincia",
+      "field4": "Código postal",
+      "field5": "Pais"
+    },
+    "tripDetail": {
+      "title": "Detalles del viaje",
+      "field1": "Número de vuelo o barco",
+      "field2": "Hora estimada del vuelo o del barco"
+    },
+    "additionalInfo": {
+      "title": "Información adicional",
+      "label": "Comentarios"
+    },
+    "pay": {
+      "title": "Pagar",
+      "p1": "Para confirmar su reserva ha de realizarse un pago de",
+      "p2": "La confirmación de la reserva se realiza de forma segura en la plataforma bancaria, una vez haya completado el formulario de reserva.",
+      "p3": "He leído y acepto las condiciones del transfer"
     }
   }
 }

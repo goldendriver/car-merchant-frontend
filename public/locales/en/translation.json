@@ -123,8 +123,8 @@
     "call": "VTC-TOLEDO"
   },
   "forms": {
-    "lebal1": {
-      "lebal": "Source",
+    "field1": {
+      "label": "Source",
       "placeholder": "Select place of Source",
       "selector1": "Madrid City",
       "selector2": "Madrid-Barajas Airport(MAD)",
@@ -133,8 +133,8 @@
       "selector5": "Madrid Atocha Station",
       "selector6": "Madrid Chamartin Station"
     },
-    "lebal2": {
-      "lebal": "Destiny",
+    "field2": {
+      "label": "Destiny",
       "placeholder": "Select destination",
       "selector1": "Madrid-Barajas Airport(MAD)",
       "selector2": "Toledo City",
@@ -142,18 +142,21 @@
       "selector4": "Madrid Atocha Station",
       "selector5": "Madrid Chamartin Station"
     },
-    "lebal3": {
+    "field3": {
       "title": "Date and Time"
     },
-    "lebal4": {
+    "field4": {
       "title1": "Adults",
       "title2": "Kids",
       "title3": "Babies",
       "title4": "Telephone"
     },
-    "lebal5": {
+    "field5": {
       "title1": "One way",
       "title2": "Round trip"
+    },
+    "errors":{
+      "error1": "Mandatory"
     },
     "btn": "Find a transfer"
   },
@@ -215,6 +218,57 @@
     },
     "group6": {
       "title1": "we will assist you"
+    }
+  },
+  "carSelect":{
+    "steper":{
+      "title1": "Select Dates",
+      "title2": "Select Vehicle",
+      "title3": "To complete",
+      "title4": "Summary"
+    },
+    "edit": "EDIT",
+    "cars":{
+      "title": "We have found {{length}} available vehicles",
+      "btn": "Book It"
+    },
+    "going":"GOING",
+    "supplements":{
+      "title":"Supplements",
+      "descri": "Night/holiday supplement"
+    },
+    "extras": "Additional Features",
+    "customerDetails":{
+      "title":"Customer Details",
+      "field1": "Name",
+      "field2": "Surnames",
+      "field3": "Email",
+      "field4": "Confirm email",
+      "field5": "Phone number",
+      "field6": "Alternative telephone"
+    },
+    "billingDetail":{
+      "title":"Billing Address",
+      "field1": "Address",
+      "field2": "City",
+      "field3": "Province",
+      "field4": "Postal Code",
+      "field5": "Country"
+    },
+    "tripDetail":{
+      "title":"Details of the trip",
+      "field1": "Flight or ship numbers",
+      "field2": "Estimated flight or ship time"
+    },
+    "additionalInfo":{
+      "title":"Additional Information",
+      "label": "Comments"
+    },
+    "pay":{
+      "title":"Pay",
+      "p1": "To confirm your reservation, a payment of",
+      "p2": "The confirmation of the reservation is made securely on the banking platform, once you have completed the reservation form.",
+      "p3": "I have read and accept the conditions of the transfer"
     }
   }
 }

@@ -41,6 +41,7 @@ import { totalPrice } from "../../utils/extras";
 import CheckOutForm from "../../componants/CheckOutForm";
 import { Elements } from '@stripe/react-stripe-js'
 import { loadStripe } from "@stripe/stripe-js";
+import { useTranslation } from "react-i18next";
 
 const stripePromise = loadStripe('pk_test_51ITftMIy2XYOJorrGz48C3F5fiBQdXxXHGrtlaC40TzQVCkvRRUj4opx6VhMHYVxIGhEFI9AkAD2ZINAHmfiPIW000SNkv2brH');
 
@@ -81,6 +82,7 @@ export default function SelectCar(props) {
         comments: '',
     });
     const [secret, setSecret] = React.useState('');
+    const { t } = useTranslation();
 
     // React.useEffect(() => {
     //     (async () => {
@@ -175,7 +177,7 @@ export default function SelectCar(props) {
                                         const stepProps = {};
                                         const labelProps = {};
                                         return (
-                                            <Step key={label} {...stepProps}>
+                                            <Step key={t(`carSelect.steper.title${index + 1}`)} {...stepProps}>
                                                 <StepLabel {...labelProps}></StepLabel>
                                             </Step>
                                         );
@@ -184,14 +186,17 @@ export default function SelectCar(props) {
 
                             </Box>
                             <Box sx={{ display: "flex" }}>
-                                <Typography sx={{ ml: "11%" }}>Seleccionar fechas</Typography>
-                                <Typography sx={{ ml: "12%" }}>Seleccionar vehículo</Typography>
-                                <Typography sx={{ ml: "14%" }}>Completar</Typography>
-                                <Typography sx={{ ml: "17%" }}>Resumen</Typography>
+                                <Typography sx={{ ml: "11%" }}>{t('carSelect.steper.title1')}</Typography>
+                                <Typography sx={{ ml: "12%" }}>{t('carSelect.steper.title2')}</Typography>
+                                <Typography sx={{ ml: "14%" }}>{t('carSelect.steper.title3')}</Typography>
+                                <Typography sx={{ ml: "17%" }}>{t('carSelect.steper.title4')}</Typography>
                             </Box>
                         </Box>
                         <Box sx={{ display: "flex", backgroundColor: "#35455d", color: "white", justifyContent: "space-around", p: "20px" }}>
-                            <Typography fontSize="1.2rem" fontWeight="800">SÓLO IDA</Typography>
+                            <Box>
+                                <Typography fontSize="1.2rem" fontWeight="800">{t('forms.field5.title1')}</Typography>
+                                {values && values?.round_trip === 'true' && <Typography fontSize="1.2rem" fontWeight="800">{t('forms.field5.title2')}</Typography>}
+                            </Box>
                             <Box>
                                 <Box sx={{ display: "flex" }}>
                                     <ArrowForwardIcon sx={{ mr: "10px" }} />
@@ -222,15 +227,15 @@ export default function SelectCar(props) {
                             </Box>
                             <Box className="editor" onClick={setModal}>
                                 <CreateIcon sx={{ mr: "10px" }} />
-                                <Typography>EDITAR</Typography>
+                                <Typography>{t('carSelect.edit')}</Typography>
                             </Box>
                         </Box>
                         <Box sx={{ display: 'flex', justifyContent: "center" }}>
                             <Container fullWidth sx={{ m: "3rem" }}>
-                                <Typography fontSize="1.25rem" fontWeight="500" align="left">Hemos encontrado {data.length} vehículos disponibles</Typography>
+                                <Typography fontSize="1.25rem" fontWeight="500" align="left">{t('carSelect.cars.title', { length: data.length })}</Typography>
                                 <Grid container sx={{ mt: "10px", mb: "100px" }}>
-                                    {data.length > 0 &&
-                                        data.map((item) => (
+                                    {[1, 2].length > 0 &&
+                                        [1, 2].map((item) => (
                                             <Grid item md={4} sx={{ padding: "20px", width: "30%", height: "300px" }}>
                                                 <Card sx={{ boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)" }}>
                                                     <CardContent>
@@ -240,7 +245,7 @@ export default function SelectCar(props) {
                                                         </Box>
                                                         <Typography fontSize="20px" fontWeight="900" align="left" sx={{ p: "10px" }}>{item.name}</Typography>
                                                         <FormControl sx={{ width: "100%" }}>
-                                                            <a className="conBtn" onClick={() => handleNext(item)}>Resérvalo</a>
+                                                            <a className="conBtn" onClick={() => handleNext(item)}>{t('carSelect.cars.btn')}</a>
                                                         </FormControl>
                                                     </CardContent>
                                                 </Card>
@@ -261,7 +266,7 @@ export default function SelectCar(props) {
                                             const stepProps = {};
                                             const labelProps = {};
                                             return (
-                                                <Step key={label} {...stepProps}>
+                                                <Step key={t(`carSelect.steper.title${index + 1}`)} {...stepProps}>
                                                     <StepLabel {...labelProps}></StepLabel>
                                                 </Step>
                                             );
@@ -270,15 +275,16 @@ export default function SelectCar(props) {
 
                                 </Box>
                                 <Box sx={{ display: "flex" }}>
-                                    <Typography sx={{ ml: "11%" }}>Seleccionar fechas</Typography>
-                                    <Typography sx={{ ml: "12%" }}>Seleccionar vehículo</Typography>
-                                    <Typography sx={{ ml: "14%" }}>Completar</Typography>
-                                    <Typography sx={{ ml: "17%" }}>Resumen</Typography>
+                                    <Typography sx={{ ml: "11%" }}>{t('carSelect.steper.title1')}</Typography>
+                                    <Typography sx={{ ml: "12%" }}>{t('carSelect.steper.title2')}</Typography>
+                                    <Typography sx={{ ml: "14%" }}>{t('carSelect.steper.title3')}</Typography>
+                                    <Typography sx={{ ml: "17%" }}>{t('carSelect.steper.title4')}</Typography>
                                 </Box>
                             </Box>
                             <Box sx={{ display: "flex", backgroundColor: "#35455d", color: "white", justifyContent: "space-around", p: "20px" }}>
                                 <Box>
-                                    <Typography fontSize="1.2rem" fontWeight="800">SÓLO IDA</Typography>
+                                    <Typography fontSize="1.2rem" fontWeight="800">{t('forms.field5.title1')}</Typography>
+                                    {values && values?.round_trip === 'true' && <Typography fontSize="1.2rem" fontWeight="800">{t('forms.field5.title2')}</Typography>}
                                     <Typography fontSize="1.2rem" fontWeight="800" align="left">{selectedItem?.price}€</Typography>
                                 </Box>
 
@@ -312,7 +318,7 @@ export default function SelectCar(props) {
                                 </Box>
                                 <Box className="editor" onClick={setModal}>
                                     <CreateIcon sx={{ mr: "10px" }} />
-                                    <Typography>EDITAR</Typography>
+                                    <Typography>{t('carSelect.edit')}</Typography>
                                 </Box>
                             </Box>
                             <Box sx={{ display: 'flex', justifyContent: "center" }}>
@@ -321,7 +327,7 @@ export default function SelectCar(props) {
                                         <img src={selectedItem?.file} width="40%" style={{ padding: "20px" }} />
                                         <Box sx={{ textAlign: "left", padding: "20px" }}>
                                             <Typography fontSize="1.75rem" fontWeight="800">{selectedItem?.name}</Typography>
-                                            <Typography fontSize="1.1rem" fontWeight="600">IDA</Typography>
+                                            <Typography fontSize="1.1rem" fontWeight="600">{t('carSelect.going')}</Typography>
                                             <Box sx={{ display: "flex", mt: "20px" }}>
                                                 <CalendarMonthIcon />
                                                 <Typography>{values && format(parseInt(values.datetime), 'yyyy-MM-dd kk:mm')}</Typography>
@@ -349,15 +355,15 @@ export default function SelectCar(props) {
                                         <Box sx={{ padding: "20px" }}>
                                             <Card sx={{ boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)" }}>
                                                 <CardContent sx={{ textAlign: "left" }}>
-                                                    <Typography fontSize="20px" fontWeight="700">Suplementos</Typography>
+                                                    <Typography fontSize="20px" fontWeight="700">{t('carSelect.supplements.title')}</Typography>
                                                     <Divider />
-                                                    <Typography fontSize="16px">Suplemento nocturnidad/festivo
+                                                    <Typography fontSize="16px">{t('carSelect.supplements.descri')}
                                                         <br />17,28 €</Typography>
                                                 </CardContent>
                                             </Card>
                                             <Card sx={{ boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)", mt: "30px" }}>
                                                 <CardContent sx={{ textAlign: "left" }}>
-                                                    <Typography fontSize="20px" fontWeight="700">Extras</Typography>
+                                                    <Typography fontSize="20px" fontWeight="700">{t('carSelect.extras')}</Typography>
                                                     <Divider />
                                                     {extraCounts && extraCounts.map((item) => (
                                                         <Typography fontSize="16px">
@@ -376,79 +382,79 @@ export default function SelectCar(props) {
                             <Box sx={{ backgroundColor: "#eeeeee" }}>
                                 <Container fullWidth sx={{ mt: "3rem", textAlign: "left" }}>
                                     <Card sx={{ background: "white", mt: "20px" }}>
-                                        <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "20px" }}>Extras</Typography>
+                                        <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "20px" }}>{t('carSelect.extras')}</Typography>
                                         <Grid container>
                                             <ExtraBox extraCounts={extraCounts} setExtraCounts={setExtraCounts} data={extras} />
                                         </Grid>
                                     </Card>
                                     <Card sx={{ background: "white", mt: "20px" }}>
-                                        <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "20px" }}>Detalles del cliente</Typography>
+                                        <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "20px" }}>{t('carSelect.customerDetails.title')}</Typography>
                                         <Grid container>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Nombre*</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field1')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Nombre" variant="outlined" value={form.name} name="name" onChange={handleForm} required />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field1')} variant="outlined" value={form.name} name="name" onChange={handleForm} required />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Apellidos*</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field2')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Apellidos" variant="outlined" value={form.surname} name="surname" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field2')} variant="outlined" value={form.surname} name="surname" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Correo electrónico*</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field3')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Correo electrónico" variant="outlined" value={form.email} name="email" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field3')} variant="outlined" value={form.email} name="email" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Confirmar el correo electrónico*</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field4')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Confirmar el correo electrónico" variant="outlined" value={form.confirm_email} name="confirm_email" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field4')} variant="outlined" value={form.confirm_email} name="confirm_email" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Número de teléfono*</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field5')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Número de teléfono" variant="outlined" value={form.phone_no} name="phone_no" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field5')} variant="outlined" value={form.phone_no} name="phone_no" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Teléfono alternativo</Typography>
+                                                <Typography>{t('carSelect.customerDetails.field6')}</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Teléfono alternativo" variant="outlined" value={form.other_phone_no} name="other_phone_no" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.customerDetails.field6')} variant="outlined" value={form.other_phone_no} name="other_phone_no" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                         </Grid>
-                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>Dirección de facturación</Typography>
+                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>{t('carSelect.billingDetail.title')}</Typography>
                                         <Grid container>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Dirección*</Typography>
+                                                <Typography>{t('carSelect.billingDetail.field1')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Dirección" variant="outlined" value={form.address} name="address" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.billingDetail.field1')} variant="outlined" value={form.address} name="address" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Ciudad*</Typography>
+                                                <Typography>{t('carSelect.billingDetail.field2')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Ciudad" variant="outlined" value={form.city} name="city" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.billingDetail.field2')} variant="outlined" value={form.city} name="city" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Provincia*</Typography>
+                                                <Typography>{t('carSelect.billingDetail.field3')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Provincia" variant="outlined" value={form.province} name="province" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.billingDetail.field3')} variant="outlined" value={form.province} name="province" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Código postal*</Typography>
+                                                <Typography>{t('carSelect.billingDetail.field4')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Código postal" variant="outlined" value={form.portal_code} name="portal_code" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.billingDetail.field4')} variant="outlined" value={form.portal_code} name="portal_code" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Pais*</Typography>
+                                                <Typography>{t('carSelect.billingDetail.field5')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
                                                     <Select
                                                         value={selectedCountry}
@@ -468,44 +474,44 @@ export default function SelectCar(props) {
                                             </Grid>
                                         </Grid>
                                         <Divider className="cardDivider" sx={{ ml: "2%" }} />
-                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>Detalles del viaje</Typography>
+                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>{t('carSelect.tripDetail.title')}</Typography>
                                         <Box sx={{ display: "flex", padding: "15px" }}>
                                             <DirectionsCarIcon />
-                                            <Typography sx={{ textDecoration: "underline" }}>Recogida Aeropuerto Madrid-Barajas (MAD)</Typography>
+                                            <Typography sx={{ textDecoration: "underline" }}>{values && values?.origin_point}</Typography>
 
                                         </Box>
                                         <Grid container>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Número de vuelo o barco*</Typography>
+                                                <Typography>{t('carSelect.tripDetail.field1')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Número de vuelo o barco" variant="outlined" value={form.shipping_no} name="shipping_no" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.tripDetail.field1')} variant="outlined" value={form.shipping_no} name="shipping_no" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                             <Grid item md={6} sx={{ padding: "20px" }}>
-                                                <Typography>Hora estimada del vuelo o del barco*</Typography>
+                                                <Typography>{t('carSelect.tripDetail.field2')}*</Typography>
                                                 <FormControl sx={{ width: "100%" }}>
-                                                    <TextField id="outlined-basic" type="text" label="Hora estimada del vuelo o del barco" variant="outlined" value={form.shipping_time} name="shipping_time" onChange={handleForm} />
+                                                    <TextField id="outlined-basic" type="text" label={t('carSelect.tripDetail.field2')} variant="outlined" value={form.shipping_time} name="shipping_time" onChange={handleForm} />
                                                 </FormControl>
                                             </Grid>
                                         </Grid>
                                         <Box sx={{ display: "flex", padding: "15px" }}>
                                             <LocationOnIcon />
-                                            <Typography sx={{ textDecoration: "underline" }}>Destino Parque Puy du Fou</Typography>
+                                            <Typography sx={{ textDecoration: "underline" }}>{values && values?.destination_point}</Typography>
 
                                         </Box>
                                         <Divider className="cardDivider" sx={{ ml: "2%" }} />
-                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>Información adicional</Typography>
-                                        <Typography sx={{ paddingLeft: "20px" }}>Comentarios</Typography>
+                                        <Typography fontSize="1.25rem" fontWeight="600" sx={{ padding: "20px" }}>{t('carSelect.additionalInfo.title')}</Typography>
+                                        <Typography sx={{ paddingLeft: "20px" }}>{t('carSelect.additionalInfo.label')}</Typography>
                                         <FormControl sx={{ width: "97%", padding: "20px" }}>
                                             <TextareaAutosize minRows={10} value={form.comments} name="comments" onChange={handleForm} />
                                         </FormControl>
                                         <Box className="result">
-                                            <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "10px" }}>Pagar {totalPrice(extraCounts)} €</Typography>
+                                            <Typography fontSize="1.5rem" fontWeight="600" sx={{ padding: "10px" }}>{t('carSelect.pay.title')} {totalPrice(extraCounts)} €</Typography>
                                             <Box className="badge1">
-                                                <Typography>Para confirmar su reserva ha de realizarse un pago de {totalPrice(extraCounts)}  €.</Typography>
+                                                <Typography>{t('carSelect.pay.p1')} {totalPrice(extraCounts)}  €.</Typography>
                                             </Box>
                                             <Box className="badge2">
-                                                <Typography>La confirmación de la reserva se realiza de forma segura en la plataforma bancaria, una vez haya completado el formulario de reserva.</Typography>
+                                                <Typography>{t('carSelect.pay.p2')}</Typography>
                                             </Box>
                                             <Box sx={{ display: "flex" }}>
                                                 <img src={visa} className="paycard" />
@@ -514,14 +520,14 @@ export default function SelectCar(props) {
                                             <Divider sx={{ mt: "20px", mb: "20px" }} />
                                             <Box sx={{ mb: "20px" }}>
                                                 <FormControlLabel
-                                                    value="He leído y acepto las condiciones del transfer"
+                                                    value="I have read and accept the conditions of the transfer"
                                                     control={<Checkbox />}
-                                                    label="He leído y acepto las condiciones del transfer"
+                                                    label={t('carSelect.pay.p3')}
                                                     labelPlacement="end"
                                                 />
                                             </Box>
                                             <a className="conBtn" onClick={submit}>
-                                                Pagar {totalPrice(extraCounts)} €
+                                                {t('carSelect.pay.title')} {totalPrice(extraCounts)} €
                                             </a>
                                         </Box>
                                     </Card>
@@ -546,10 +552,10 @@ export default function SelectCar(props) {
 
                                 </Box>
                                 <Box sx={{ display: "flex" }}>
-                                    <Typography sx={{ ml: "11%" }}>Seleccionar fechas</Typography>
-                                    <Typography sx={{ ml: "12%" }}>Seleccionar vehículo</Typography>
-                                    <Typography sx={{ ml: "14%" }}>Completar</Typography>
-                                    <Typography sx={{ ml: "17%" }}>Resumen</Typography>
+                                    <Typography sx={{ ml: "11%" }}>{t('carSelect.steper.title1')}</Typography>
+                                    <Typography sx={{ ml: "12%" }}>{t('carSelect.steper.title2')}</Typography>
+                                    <Typography sx={{ ml: "14%" }}>{t('carSelect.steper.title3')}</Typography>
+                                    <Typography sx={{ ml: "17%" }}>{t('carSelect.steper.title4')}</Typography>
                                 </Box>
                             </Box>
                             <Box sx={{ display: "flex", backgroundColor: "#35455d", color: "white", justifyContent: "space-around", p: "20px" }}>

@@ -46,14 +46,14 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
     // } else {
     //   setError({ ...error, originTwo: true, destinyTwo: true });
     // }
-  
+
   }
   const { t, i18n } = useTranslation();
   return (
     <Box className="formContent" sx={{ height: formData.way === 'two' ? '800px' : '520px' }}>
       <Box padding="20px" textAlign="left">
         <Typography>
-        {t('forms.lebal1.lebal')}
+          {t('forms.field1.label')}
         </Typography>
         <FormControl sx={{ width: "100%" }}>
           <Select
@@ -64,19 +64,19 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
             sx={{ background: "white" }}
           >
             <MenuItem value="">
-              <em>{t('forms.lebal1.placeholder')}</em>
+              <em>{t('forms.field1.placeholder')}</em>
             </MenuItem>
-            <MenuItem value='madrid city'>{t('forms.lebal1.selector1')}</MenuItem>
-            <MenuItem value='madrid-barajas airport'>{t('forms.lebal1.selector2')}</MenuItem>
-            <MenuItem value='toledo city'>{t('forms.lebal1.selector3')}</MenuItem>
-            <MenuItem value='puy du fou park'>{t('forms.lebal1.selector4')}</MenuItem>
-            <MenuItem value='madrid atocha station'>{t('forms.lebal1.selector5')}</MenuItem>
-            <MenuItem value='madrid chamartin station'>{t('forms.lebal1.selector6')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector1')}>{t('forms.field1.selector1')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector2')}>{t('forms.field1.selector2')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector3')}>{t('forms.field1.selector3')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector4')}>{t('forms.field1.selector4')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector5')}>{t('forms.field1.selector5')}</MenuItem>
+            <MenuItem value={t('forms.field1.selector6')}>{t('forms.field1.selector6')}</MenuItem>
           </Select>
-          <FormHelperText sx={{ display: error.originOne ? 'block' : 'none' }} error={true}>Obligatorio</FormHelperText>
+          <FormHelperText sx={{ display: error.originOne ? 'block' : 'none' }} error={true}>{t('forms.errors.error1')}</FormHelperText>
         </FormControl>
         <Typography>
-        {t('forms.lebal2.lebal')}
+          {t('forms.field2.label')}
         </Typography>
         <FormControl sx={{ width: "100%" }}>
           <Select
@@ -87,18 +87,18 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
             sx={{ background: "white" }}
           >
             <MenuItem value="">
-              <em>{t('forms.lebal2.placeholder')}</em>
+              <em>{t('forms.field2.placeholder')}</em>
             </MenuItem>
-            <MenuItem value='aeropuerto madrid-barajas'>{t('forms.lebal2.selector1')}</MenuItem>
-            <MenuItem value='toledo ciudad'>{t('forms.lebal2.selector2')}</MenuItem>
-            <MenuItem value='parque puy du fou'>{t('forms.lebal2.selector3')}</MenuItem>
-            <MenuItem value='estación de atocha madrid'>{t('forms.lebal2.selector4')}</MenuItem>
-            <MenuItem value='estación de chamartín madrid'>{t('forms.lebal2.selector5')}</MenuItem>
+            <MenuItem value={t('forms.field2.selector1')}>{t('forms.field2.selector1')}</MenuItem>
+            <MenuItem value={t('forms.field2.selector2')}>{t('forms.field2.selector2')}</MenuItem>
+            <MenuItem value={t('forms.field2.selector3')}>{t('forms.field2.selector3')}</MenuItem>
+            <MenuItem value={t('forms.field2.selector4')}>{t('forms.field2.selector4')}</MenuItem>
+            <MenuItem value={t('forms.field2.selector5')}>{t('forms.field2.selector5')}</MenuItem>
           </Select>
-          <FormHelperText sx={{ display: error.destinyOne ? 'block' : 'none' }} error={true}>Obligatorio</FormHelperText>
+          <FormHelperText sx={{ display: error.destinyOne ? 'block' : 'none' }} error={true}>{t('forms.errors.error1')}</FormHelperText>
         </FormControl>
         <Typography>
-        {t('forms.lebal3.title')}
+          {t('forms.field3.title')}
         </Typography>
         <FormControl sx={{ width: "100%" }}>
           <TextField
@@ -116,21 +116,21 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
         <Box sx={{ width: "100%", display: "flex", justifyContent: "space-between" }}>
           <Box width="25%">
             <Typography>
-            {t('forms.lebal4.title1')}
+              {t('forms.field4.title1')}
             </Typography>
-            <TextField id="outlined-basic" type="number"  variant="outlined" value={formData.adult} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, adult: e.target.value })} />
+            <TextField id="outlined-basic" type="number" variant="outlined" value={formData.adult} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, adult: e.target.value })} />
           </Box>
           <Box width="25%">
             <Typography>
-            {t('forms.lebal4.title2')}
+              {t('forms.field4.title2')}
             </Typography>
-            <TextField id="outlined-basic" type="number"  variant="outlined" value={formData.kid} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, kid: e.target.value })} />
+            <TextField id="outlined-basic" type="number" variant="outlined" value={formData.kid} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, kid: e.target.value })} />
           </Box>
           <Box width="25%">
             <Typography>
-            {t('forms.lebal4.title3')}
+              {t('forms.field4.title3')}
             </Typography>
-            <TextField id="outlined-basic" type="number"  variant="outlined" value={formData.drink} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, drink: e.target.value })} />
+            <TextField id="outlined-basic" type="number" variant="outlined" value={formData.drink} sx={{ background: "white" }} onChange={(e) => setFormData({ ...formData, drink: e.target.value })} />
           </Box>
         </Box>
         <FormControl sx={{ margin: '10px 0px' }}>
@@ -138,13 +138,13 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
             row
             aria-label="way" value={formData.way} name='way' onChange={(e) => setFormData({ ...formData, way: e.target.value })}
           >
-            <FormControlLabel value="one" control={<Radio color="default" />} label={t('forms.lebal5.title1')} />
-            <FormControlLabel value="two" control={<Radio color="default" />} label={t('forms.lebal5.title2')} />
+            <FormControlLabel value="one" control={<Radio color="default" />} label={t('forms.field5.title1')} />
+            <FormControlLabel value="two" control={<Radio color="default" />} label={t('forms.field5.title2')} />
           </RadioGroup>
         </FormControl>
         <Box sx={{ display: formData.way === 'two' ? 'block' : "none" }}>
           <Typography>
-          {t('forms.lebal1.lebal')}
+            {t('forms.field1.label')}
           </Typography>
           <FormControl sx={{ width: "100%" }}>
             <Select
@@ -155,19 +155,19 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
               sx={{ background: "white" }}
             >
               <MenuItem value="">
-                <em>{t('forms.lebal1.placeholder')}</em>
+                <em>{t('forms.field1.placeholder')}</em>
               </MenuItem>
-              <MenuItem value='madrid city'>{t('forms.lebal1.selector1')}</MenuItem>
-              <MenuItem value='madrid-barajas airport'>{t('forms.lebal1.selector2')}</MenuItem>
-              <MenuItem value='toledo city'>{t('forms.lebal1.selector3')}</MenuItem>
-              <MenuItem value='puy du fou park'>{t('forms.lebal1.selector4')}</MenuItem>
-              <MenuItem value='madrid atocha station'>{t('forms.lebal1.selector5')}</MenuItem>
-              <MenuItem value='madrid chamartin station'>{t('forms.lebal1.selector6')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector1')}>{t('forms.field2.selector1')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector2')}>{t('forms.field2.selector2')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector3')}>{t('forms.field2.selector3')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector4')}>{t('forms.field2.selector4')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector5')}>{t('forms.field2.selector5')}</MenuItem>
+              <MenuItem value={t('forms.field2.selector6')}>{t('forms.field2.selector6')}</MenuItem>
             </Select>
-            <FormHelperText sx={{ display: error.originTwo ? 'block' : 'none' }} error={true}>Obligatorio</FormHelperText>
+            <FormHelperText sx={{ display: error.originTwo ? 'block' : 'none' }} error={true}>{t('forms.errors.error1')}</FormHelperText>
           </FormControl>
           <Typography>
-          {t('forms.lebal2.lebal')}
+            {t('forms.field2.label')}
           </Typography>
           <FormControl sx={{ width: "100%" }}>
             <Select
@@ -178,18 +178,18 @@ const Forms = ({ datetime, destination_point, number_of_adults, number_of_childr
               sx={{ background: "white" }}
             >
               <MenuItem value="">
-                <em>{t('forms.lebal1.placeholder')}</em>
+                <em>{t('forms.field2.placeholder')}</em>
               </MenuItem>
-              <MenuItem value='aeropuerto madrid-barajas'>{t('forms.lebal1.selector1')}</MenuItem>
-              <MenuItem value='toledo ciudad'>{t('forms.lebal1.selector2')}</MenuItem>
-              <MenuItem value='parque puy du fou'>{t('forms.lebal1.selector3')}</MenuItem>
-              <MenuItem value='estación de atocha madrid'>{t('forms.lebal1.selector4')}</MenuItem>
-              <MenuItem value='estación de chamartín madrid'>{t('forms.lebal1.selector5')}</MenuItem>
+              <MenuItem value={t('forms.field1.selector1')}>{t('forms.field1.selector1')}</MenuItem>
+              <MenuItem value={t('forms.field1.selector2')}>{t('forms.field1.selector2')}</MenuItem>
+              <MenuItem value={t('forms.field1.selector3')}>{t('forms.field1.selector3')}</MenuItem>
+              <MenuItem value={t('forms.field1.selector4')}>{t('forms.field1.selector4')}</MenuItem>
+              <MenuItem value={t('forms.field1.selector5')}>{t('forms.field1.selector5')}</MenuItem>
             </Select>
-            <FormHelperText sx={{ display: error.destinyTwo ? 'block' : 'none' }} error={true}>Obligatorio</FormHelperText>
+            <FormHelperText sx={{ display: error.destinyTwo ? 'block' : 'none' }} error={true}>{t('forms.errors.error1')}</FormHelperText>
           </FormControl>
           <Typography>
-          {t('forms.lebal3.title')}
+            {t('forms.field3.title')}
           </Typography>
           <FormControl sx={{ width: "100%" }}>
             <TextField
